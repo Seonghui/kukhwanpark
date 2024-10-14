@@ -2,11 +2,12 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/src/i18n/routing";
 
 export default function HomePage() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("home");
   return (
     <div>
-      <h1>{t("title")}</h1>
-      <Link href="/about">{t("about")}</Link>
+      <img src="https://dummyimage.com/2000x1500/000/fff" alt="dummy" />
+      <div>{t("about")}</div>
+      <div>{t("myContribution")}</div>
     </div>
   );
 }

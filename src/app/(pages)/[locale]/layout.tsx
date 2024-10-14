@@ -1,4 +1,6 @@
-import { NextIntlClientProvider } from "next-intl";
+import Footer from "@/src/components/Footer";
+import Navigation from "@/src/components/Navigation";
+import { NextIntlClientProvider, useTranslations } from "next-intl";
 import { getMessages } from "next-intl/server";
 
 export default async function LocaleLayout({
@@ -8,17 +10,29 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <html lang={locale}>
+        <body>
+          <div className="flex">
+            <div className="w-1/3 p-5">
+              <header className="flex justify-between *:text-2xl">
+                <div>Kukhwan Park</div>
+                <div>2017~2024</div>
+              </header>
+              <nav className="pt-20">
+                <Navigation />
+              </nav>
+              <footer className="fixed bottom-10">
+                <Footer />
+              </footer>
+            </div>
+            <main className="w-2/3">{children}</main>
+          </div>
+        </body>
+      </html>
+    </NextIntlClientProvider>
   );
 }
