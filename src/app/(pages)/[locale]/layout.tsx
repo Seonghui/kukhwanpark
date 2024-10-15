@@ -28,7 +28,7 @@ export default async function LocaleLayout({
         >
           <div>
             <Navigation />
-            <main className="md:ml-[33%] md:w-2/3 px-4 md:mt-0 mb-40">
+            <main className="md:ml-[33%] md:w-2/3 px-4 mt-12 md:mt-0 mb-40">
               {children}
             </main>
           </div>

@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "../i18n/routing";
 import { projects } from "../constants";
 import Footer from "./Footer";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { EllipsisHorizontalIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 function Navigation() {
@@ -16,9 +16,14 @@ function Navigation() {
     setIsMenuOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
   return (
     <Fragment>
-      <div className="sticky top-0 left-0 right-0 md:hidden px-4 py-3 flex justify-between bg-opacity-80 backdrop-blur-lg z-10">
+      {/* 모바일 내비바 */}
+      <div className="fixed bg-[#F2F2F2] top-0 left-0 right-0 md:hidden px-4 py-3 flex justify-between z-10">
         <div className="font-semibold underline">Kukhwan Park</div>
         <button onClick={handleToggleMenu}>
           {isMenuOpen ? (
@@ -28,10 +33,11 @@ function Navigation() {
           )}
         </button>
       </div>
+      {/* 메뉴 리스트 */}
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } md:block absolute top-10 md:top-0 left-0 bottom-0 p-5 w-full md:w-1/3 bg-[#F2F2F2] md:bg-transparent`}
+        } md:block fixed md:w-[440px] top-10 md:top-0 left-0 md:left-auto bottom-0 p-5 w-full bg-[#F2F2F2] md:bg-transparent overflow-hidden z-10`}
       >
         <header className="justify-between *:text-xl hidden md:flex">
           <div>Kukhwan Park</div>
