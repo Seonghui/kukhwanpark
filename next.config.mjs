@@ -7,6 +7,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ["kukhwanpark.vercel.app"],
+  },
 };
 
 export default withNextIntl(nextConfig);
