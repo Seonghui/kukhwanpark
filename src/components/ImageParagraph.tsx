@@ -9,11 +9,11 @@ interface ImageParagraphProps {
 
 function ImageParagraph({ imageSrc, paragraph, title }: ImageParagraphProps) {
   return (
-    <div className="md:flex md:gap-8">
-      <div className="md:w-1/2">
-        <img src={imageSrc} />
+    <div className="xl:flex xl:gap-8">
+      <div className="xl:w-1/2">
+        <img className="block mx-auto" src={imageSrc} />
       </div>
-      <div className="md:w-1/2 mt-5 md:mt-0">
+      <div className="xl:w-1/2 mt-5 xl:mt-0">
         <Paragraph title={title}>{paragraph}</Paragraph>
       </div>
     </div>

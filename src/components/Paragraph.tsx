@@ -9,7 +9,7 @@ function Paragraph({ title, children }: ParagraphProps) {
   return (
     <div>
       {!!title && <h6 className="text-lg font-semibold">{title}</h6>}
-      <p className="break-keep whitespace-pre-wrap md:text-lg">{children}</p>
+      <p className="break-keep whitespace-pre-wrap xl:text-lg">{children}</p>
     </div>
   );
 }

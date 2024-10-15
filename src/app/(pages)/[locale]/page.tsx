@@ -22,15 +22,15 @@ export default function HomePage() {
       <AnimatedComponent>
         <section>
           <img src="/work_01/Slide-4_3---3.png" alt="dummy" />
-          <div className="md:flex pt-5 gap-8">
-            <div className="md:w-3/4">
+          <div className="xl:flex pt-5 gap-8">
+            <div className="xl:w-3/4">
               <Paragraph title="About">{workT("about")}</Paragraph>
               <div className="pt-5" />
               <Paragraph title="My Contribution">
                 {workT("myContribution")}
               </Paragraph>
             </div>
-            <div className="md:w-1/4 mt-5 md:mt-0">
+            <div className="xl:w-1/4 mt-5 xl:mt-0">
               <Info
                 timeline={workT("timeline")}
                 teamSize={workT("teamSize")}

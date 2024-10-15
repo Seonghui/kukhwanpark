@@ -23,8 +23,10 @@ function Navigation() {
   return (
     <Fragment>
       {/* 모바일 내비바 */}
-      <div className="fixed bg-[#F2F2F2] top-0 left-0 right-0 md:hidden px-4 py-3 flex justify-between z-10">
-        <div className="font-semibold underline">Kukhwan Park</div>
+      <div className="fixed bg-[#F2F2F2] top-0 left-0 right-0 xl:hidden px-4 py-3 flex justify-between z-10">
+        <div className="font-semibold underline">
+          <Link href="/">Kukhwan Park</Link>
+        </div>
         <button onClick={handleToggleMenu}>
           {isMenuOpen ? (
             <XMarkIcon className="size-6" />
@@ -37,10 +39,12 @@ function Navigation() {
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } md:block fixed md:w-[440px] top-10 md:top-0 left-0 md:left-auto bottom-0 p-5 w-full bg-[#F2F2F2] md:bg-transparent overflow-hidden z-10`}
+        } xl:block fixed xl:max-w-[440px] top-10 xl:top-0 left-0 xl:left-auto bottom-0 p-5 w-full bg-[#F2F2F2] xl:bg-transparent overflow-hidden z-10`}
       >
-        <header className="justify-between *:text-xl hidden md:flex">
-          <div>Kukhwan Park</div>
+        <header className="justify-between *:text-xl hidden xl:flex">
+          <div>
+            <Link href="/">Kukhwan Park</Link>
+          </div>
           <div>2017~2024</div>
         </header>
 
@@ -49,17 +53,14 @@ function Navigation() {
             {projects.map((project) => {
               const isActive = pathname === project.href; // 현재 경로와 비교
               return (
-                <li key={project.id}>
-                  <Link
-                    href={project.href}
-                    className="inline-block md:text-xl pb-1"
-                  >
-                    <span className="mr-8">{project.id}</span>
+                <li key={project.id} className="flex items-center pb-1">
+                  <Link href={project.href} className="inline-flex xl:text-xl">
+                    {/* project.id와 name을 같은 줄에 유지 */}
+                    <span className="mr-4">{project.id}</span>
                     <span
                       className={`underline  ${
                         isActive ? "text-[#3D3D3D]" : "text-[#797979]"
                       }`}
-                      style={{ maxWidth: "" }}
                     >
                       {t(project.id)}
                     </span>

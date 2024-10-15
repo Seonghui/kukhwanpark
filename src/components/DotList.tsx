@@ -9,7 +9,7 @@ function DotList({ list }: DotListProps) {
     return null;
   }
   return (
-    <ul className="list-disc pl-8 *:md:text-lg">
+    <ul className="list-disc pl-8 *:xl:text-lg">
       {list?.map((item, index) => (
         <li key={index}>
           {item.title && <span className="font-medium">{item.title}: </span>}
