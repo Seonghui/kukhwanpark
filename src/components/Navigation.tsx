@@ -18,8 +18,8 @@ function Navigation() {
 
   return (
     <Fragment>
-      <div className="fixed bg-neutral-100 top-0 left-0 right-0 md:hidden px-4 py-3 *:text-xl flex justify-between">
-        <div>Kukhwan Park</div>
+      <div className="sticky bg-neutral-100 top-0 left-0 right-0 md:hidden px-4 py-3 flex justify-between bg-opacity-80 backdrop-blur-lg z-10">
+        <div className="font-semibold underline">Kukhwan Park</div>
         <button onClick={handleToggleMenu}>
           {isMenuOpen ? (
             <XMarkIcon className="size-6" />
@@ -46,7 +46,7 @@ function Navigation() {
                 <li key={project.id}>
                   <Link
                     href={project.href}
-                    className="inline-block text-xl pb-1"
+                    className="inline-block md:text-xl pb-1"
                   >
                     <span className="mr-8">{project.id}</span>
                     <span

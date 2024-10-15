@@ -26,7 +26,7 @@ export default async function LocaleLayout({
         <body className={`${pretendard.variable} font-pretendard font-regular`}>
           <div>
             <Navigation />
-            <main className="md:ml-[33%] md:w-2/3 px-4 mt-14 md:mt-0 mb-40">
+            <main className="md:ml-[33%] md:w-2/3 px-4 md:mt-0 mb-40">
               {children}
             </main>
           </div>
