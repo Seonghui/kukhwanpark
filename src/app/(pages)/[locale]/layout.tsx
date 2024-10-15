@@ -24,20 +24,11 @@ export default async function LocaleLayout({
     <NextIntlClientProvider messages={messages}>
       <html lang={locale}>
         <body className={`${pretendard.variable} font-pretendard font-regular`}>
-          <div className="flex">
-            <div className="fixed top-0 left-0 bottom-0 p-5 w-1/3">
-              <header className="flex justify-between *:text-xl">
-                <div>Kukhwan Park</div>
-                <div>2017~2024</div>
-              </header>
-              <nav className="pt-12">
-                <Navigation />
-              </nav>
-              <footer className="fixed bottom-10">
-                <Footer />
-              </footer>
-            </div>
-            <main className="ml-[33%] w-2/3 px-4">{children}</main>
+          <div>
+            <Navigation />
+            <main className="md:ml-[33%] md:w-2/3 px-4 mt-10 md:mt-0 mb-40">
+              {children}
+            </main>
           </div>
         </body>
       </html>
