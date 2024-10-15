@@ -8,6 +8,24 @@ import DotList from "@/src/components/DotList";
 import ImageParagraph from "@/src/components/ImageParagraph";
 import AnimatedComponent from "@/src/components/AnimatedComponent";
 
+import Image1 from "@/src/assets/images/work_01/Slide-4_3---3.png";
+import Image2 from "@/src/assets/images/work_01/Slide-4_3---10.png";
+import Image3 from "@/src/assets/images/work_01/Slide-4_3---6.png";
+import Image4 from "@/src/assets/images/work_01/Slide-4_3---14.png";
+import Image5 from "@/src/assets/images/work_01/Slide-4_3---15.png";
+import Image6 from "@/src/assets/images/work_01/Slide-4_3---12.png";
+import Image7 from "@/src/assets/images/work_01/Slide-4_3---1.png";
+import Image8 from "@/src/assets/images/work_01/Slide-4_3---16.png";
+import Image9 from "@/src/assets/images/work_01/Slide-4_3---17.png";
+import Image10 from "@/src/assets/images/work_01/Slide-4_3---18.png";
+import Image11 from "@/src/assets/images/work_01/Slide-4_3---4.png";
+import Image12 from "@/src/assets/images/work_01/Slide-4_3---2.png";
+import Image13 from "@/src/assets/images/work_01/Slide-4_3---19.png";
+import Image14 from "@/src/assets/images/work_01/Slide-4_3---20.png";
+import Image15 from "@/src/assets/images/work_01/Slide-4_3---21.png";
+import Image16 from "@/src/assets/images/work_01/Slide-4_3---22.png";
+import Image17 from "@/src/assets/images/work_01/Slide-4_3---23.png";
+
 export default function HomePage() {
   const menuT = useTranslations("menu");
   const workT = useTranslations("Work_01");
@@ -21,7 +39,7 @@ export default function HomePage() {
       {/* section 1 */}
       <AnimatedComponent>
         <section>
-          <img src="/work_01/Slide-4_3---3.png" alt="dummy" />
+          <img src={Image1.src} alt="dummy" />
           <div className="xl:flex pt-5 gap-8">
             <div className="xl:w-3/4">
               <Paragraph title="About">{workT("about")}</Paragraph>
@@ -45,7 +63,7 @@ export default function HomePage() {
       {/* section 2 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---10.png" alt="dummy" />
+          <img src={Image2.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="Design Challenges">
@@ -59,7 +77,7 @@ export default function HomePage() {
       {/* section 3 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---6.png" alt="dummy" />
+          <img src={Image3.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="So What’s the Problem?">
@@ -73,7 +91,7 @@ export default function HomePage() {
       {/* section 4 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---14.png" alt="dummy" />
+          <img src={Image4.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="Identifying Users">
@@ -120,7 +138,7 @@ export default function HomePage() {
       {/* section 5 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---15.png" alt="dummy" />
+          <img src={Image5.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="Market Oppertunites">
@@ -173,7 +191,7 @@ export default function HomePage() {
       {/* section 6 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---12.png" alt="dummy" />
+          <img src={Image6.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="Interactions">
@@ -217,8 +235,8 @@ export default function HomePage() {
       {/* section 7 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---1.png" alt="dummy" />
-          <img src="/work_01/Slide-4_3---1.png" alt="dummy" />
+          <img src={Image7.src} alt="dummy" />
+          <img src={Image7.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="Execution">{workT("Execution")}</Paragraph>
@@ -230,7 +248,7 @@ export default function HomePage() {
       {/* section 8 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---16.png" alt="dummy" />
+          <img src={Image8.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="Color Theme">{workT("Color_Theme")}</Paragraph>
@@ -242,7 +260,7 @@ export default function HomePage() {
       {/* section 9 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---17.png" alt="dummy" />
+          <img src={Image9.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="UI Framework">
@@ -256,9 +274,9 @@ export default function HomePage() {
       {/* section 10 */}
       <AnimatedComponent>
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---18.png" alt="dummy" />
-          <img src="/work_01/Slide-4_3---4.png" alt="dummy" />
-          <img src="/work_01/Slide-4_3---2.png" alt="dummy" />
+          <img src={Image10.src} alt="dummy" />
+          <img src={Image11.src} alt="dummy" />
+          <img src={Image12.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="Anatomy of UI">
@@ -266,25 +284,25 @@ export default function HomePage() {
               </Paragraph>
               <div className="flex pt-5" />
               <ImageParagraph
-                imageSrc="/work_01/Slide-4_3---19.png"
+                imageSrc={Image13.src}
                 title="Global Navigation + Titled Section"
                 paragraph={workT("Anatomy_of_UI_01")}
               />
               <div className="flex pt-10" />
               <ImageParagraph
-                imageSrc="/work_01/Slide-4_3---20.png"
+                imageSrc={Image14.src}
                 title="Card View"
                 paragraph={workT("Anatomy_of_UI_01")}
               />
               <div className="flex pt-10" />
               <ImageParagraph
-                imageSrc="/work_01/Slide-4_3---21.png"
+                imageSrc={Image15.src}
                 title="DAG (Directred Acyclic Graph)"
                 paragraph={workT("Anatomy_of_UI_01")}
               />
               <div className="flex pt-10" />
               <ImageParagraph
-                imageSrc="/work_01/Slide-4_3---22.png"
+                imageSrc={Image16.src}
                 title="Data Visualization"
                 paragraph={workT("Anatomy_of_UI_01")}
               />
@@ -297,7 +315,7 @@ export default function HomePage() {
       <AnimatedComponent>
         {/* section 11 */}
         <section className="pt-24">
-          <img src="/work_01/Slide-4_3---23.png" alt="dummy" />
+          <img src={Image17.src} alt="dummy" />
           <div className="flex pt-5">
             <div>
               <Paragraph title="Outcomes">{workT("Outcomes")}</Paragraph>
