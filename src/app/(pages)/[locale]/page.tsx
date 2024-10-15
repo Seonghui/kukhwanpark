@@ -20,15 +20,15 @@ export default function HomePage() {
       {/* section 1 */}
       <section>
         <img src="/work_01/Slide-4_3---3.png" alt="dummy" />
-        <div className="flex pt-5 gap-8">
-          <div className="w-3/4">
+        <div className="md:flex pt-5 gap-8">
+          <div className="md:w-3/4">
             <Paragraph title="About">{workT("about")}</Paragraph>
             <div className="pt-5" />
             <Paragraph title="My Contribution">
               {workT("myContribution")}
             </Paragraph>
           </div>
-          <div className="w-1/4">
+          <div className="md:w-1/4 mt-5 md:mt-0">
             <Info
               timeline={workT("timeline")}
               teamSize={workT("teamSize")}

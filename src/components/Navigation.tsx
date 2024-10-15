@@ -18,7 +18,7 @@ function Navigation() {
 
   return (
     <Fragment>
-      <div className="fixed top-0 left-0 right-0 md:hidden px-4 pt-3 *:text-xl flex justify-between">
+      <div className="fixed bg-neutral-100 top-0 left-0 right-0 md:hidden px-4 py-3 *:text-xl flex justify-between">
         <div>Kukhwan Park</div>
         <button onClick={handleToggleMenu}>
           {isMenuOpen ? (
