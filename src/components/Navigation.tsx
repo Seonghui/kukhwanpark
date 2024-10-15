@@ -17,9 +17,10 @@ function Navigation() {
             <Link href={project.href} className="inline-block text-xl pb-1">
               <span className="mr-8">{project.id}</span>
               <span
-                className={`underline ${
+                className={`underline  ${
                   isActive ? "text-neutral-900" : "text-neutral-500"
                 }`}
+                style={{ maxWidth: "" }}
               >
                 {t(project.id)}
               </span>

@@ -10,17 +10,17 @@ interface InfoProps {
 function Info({ timeline, teamSize, targetUser, myRole }: InfoProps) {
   return (
     <dl>
-      <dt>Timeline</dt>
-      <dd>{timeline}</dd>
+      <dt className="font-medium">Timeline</dt>
+      <dd className="mb-6 font-light">{timeline}</dd>
 
-      <dt>Team Size</dt>
-      <dd>{teamSize}</dd>
+      <dt className="font-medium">Team Size</dt>
+      <dd className="mb-6 font-light">{teamSize}</dd>
 
-      <dt>Target User</dt>
-      <dd>{targetUser}</dd>
+      <dt className="font-medium">Target User</dt>
+      <dd className="mb-6 font-light">{targetUser}</dd>
 
-      <dt>My Role</dt>
-      <dd>{myRole}</dd>
+      <dt className="font-medium">My Role</dt>
+      <dd className="whitespace-pre-wrap font-light">{myRole}</dd>
     </dl>
   );
 }
