@@ -18,7 +18,7 @@ function Navigation() {
 
   return (
     <Fragment>
-      <div className="sticky bg-neutral-100 top-0 left-0 right-0 md:hidden px-4 py-3 flex justify-between bg-opacity-80 backdrop-blur-lg z-10">
+      <div className="sticky top-0 left-0 right-0 md:hidden px-4 py-3 flex justify-between bg-opacity-80 backdrop-blur-lg z-10">
         <div className="font-semibold underline">Kukhwan Park</div>
         <button onClick={handleToggleMenu}>
           {isMenuOpen ? (
@@ -31,9 +31,9 @@ function Navigation() {
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } md:block fixed top-10 md:top-0 left-0 bottom-0 p-5 w-full md:w-1/3 bg-neutral-100 md:bg-transparent`}
+        } md:block absolute top-10 md:top-0 left-0 bottom-0 p-5 w-full md:w-1/3 bg-[#F2F2F2] md:bg-transparent`}
       >
-        <header className=" justify-between *:text-xl hidden md:flex">
+        <header className="justify-between *:text-xl hidden md:flex">
           <div>Kukhwan Park</div>
           <div>2017~2024</div>
         </header>
@@ -51,7 +51,7 @@ function Navigation() {
                     <span className="mr-8">{project.id}</span>
                     <span
                       className={`underline  ${
-                        isActive ? "text-neutral-900" : "text-neutral-500"
+                        isActive ? "text-[#3D3D3D]" : "text-[#797979]"
                       }`}
                       style={{ maxWidth: "" }}
                     >

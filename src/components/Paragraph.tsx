@@ -8,8 +8,8 @@ interface ParagraphProps {
 function Paragraph({ title, children }: ParagraphProps) {
   return (
     <div>
-      {!!title && <h6 className="text-lg pb-2">{title}</h6>}
-      <p className="break-keep whitespace-pre-wrap font-light">{children}</p>
+      {!!title && <h6 className="text-lg font-semibold">{title}</h6>}
+      <p className="break-keep whitespace-pre-wrap md:text-lg">{children}</p>
     </div>
   );
 }

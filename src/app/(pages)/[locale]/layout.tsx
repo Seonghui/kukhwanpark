@@ -23,7 +23,9 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <html lang={locale}>
-        <body className={`${pretendard.variable} font-pretendard font-regular`}>
+        <body
+          className={`${pretendard.variable} font-pretendard font-regular max-w-screen-xl mx-auto relative`}
+        >
           <div>
             <Navigation />
             <main className="md:ml-[33%] md:w-2/3 px-4 md:mt-0 mb-40">

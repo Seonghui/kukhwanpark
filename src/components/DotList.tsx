@@ -9,10 +9,10 @@ function DotList({ list }: DotListProps) {
     return null;
   }
   return (
-    <ul className="list-disc pl-8">
+    <ul className="list-disc pl-8 *:md:text-lg">
       {list?.map((item, index) => (
         <li key={index}>
-          {item.title && <strong>{item.title}: </strong>}
+          {item.title && <span className="font-medium">{item.title}: </span>}
           {item.content}
         </li>
       ))}

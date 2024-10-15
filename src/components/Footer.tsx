@@ -5,17 +5,17 @@ function Footer() {
   return (
     <Fragment>
       <div>
-        <div className="*:block *:text-xl underline text-neutral-500">
+        <div className="*:block md*:text-xl underline text-neutral-500">
           <Link href="">Resume</Link>
           <Link href="">LinkedIn</Link>
           <Link href="">Contack</Link>
         </div>
-        <div className="mt-5">
+        <div className="mt-5 *:underline">
           <Link href="/" locale="ko" className="inline-block mr-5">
-            Ko
+            KR
           </Link>
           <Link href="/" locale="en">
-            En
+            EN
           </Link>
         </div>
       </div>
