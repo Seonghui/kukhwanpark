@@ -5,7 +5,7 @@ function Footer() {
   return (
     <Fragment>
       <div>
-        <div className="*:block *:text-2xl underline text-neutral-500">
+        <div className="*:block *:text-xl underline text-neutral-500">
           <Link href="">Resume</Link>
           <Link href="">LinkedIn</Link>
           <Link href="">Contack</Link>
